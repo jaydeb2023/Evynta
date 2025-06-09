@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evynta | Empowering Through Data & AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #f9fafc;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      position: relative;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem;
+      display: block;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background: #1e293b;
+      top: 40px;
+      left: 0;
+      min-width: 200px;
+      border-radius: 6px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul ul li a {
+      color: #e2e8f0;
+      padding: 0.6rem 1rem;
+      transition: background 0.3s;
+    }
+
+    nav ul ul li a:hover {
+      background: #334155;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 7rem 1rem 5rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+      color: #fbbf24;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      max-width: 700px;
+    }
+
+    .section {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.4rem;
+      color: #38bdf8;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1e293b;
+      width: 280px;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .card h3 {
+      color: #fbbf24;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .social a {
+      color: #f1f5f9;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Evynta</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#solutions">Solutions</a>
+          <ul>
+            <li><a href="#web">Website Development</a></li>
+            <li><a href="#analytics">Data Analytics</a></li>
+            <li><a href="#scraping">Web Scraping</a></li>
+            <li><a href="#marketing">Digital Marketing</a></li>
+            <li><a href="#science">Data Science</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#company">Company</a>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2 id="rotating-title">Empowering Through Intelligence</h2>
+    <p>We deliver cutting-edge solutions in AI, Web, and Data for forward-thinking businesses.</p>
+  </section>
+
+  <section class="section" id="solutions">
+    <h2>Our Core Services</h2>
+    <div class="cards">
+      <div class="card" id="web">
+        <h3>Website Development</h3>
+        <p>Responsive, SEO-optimized websites & portals tailored to your brand identity.</p>
+      </div>
+      <div class="card" id="analytics">
+        <h3>Data Analytics</h3>
+        <p>Dashboards & insights using Power BI, Excel, and custom Python scripts.</p>
+      </div>
+      <div class="card" id="scraping">
+        <h3>Web Scraping</h3>
+        <p>Real-time data extraction from public sources using Selenium, Scrapy & APIs.</p>
+      </div>
+      <div class="card" id="marketing">
+        <h3>Digital Marketing</h3>
+        <p>Performance campaigns across social, email, and paid media channels.</p>
+      </div>
+      <div class="card" id="science">
+        <h3>Data Science</h3>
+        <p>Machine learning, NLP, recommendation systems and predictive analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Evynta is a digital-first startup transforming ideas into data-powered solutions for tomorrow’s problems.</p>
+  </section>
+
+  <section class="section" id="team">
+    <h2>Our Team</h2>
+    <p>We are designers, developers, analysts, and strategists passionate about building smart systems.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact.evynta@gmail.com</p>
+    <p>Location: Kolkata, India</p>
+    <div class="social">
+      <a href="https://linkedin.com/company/evynta" target="https://www.linkedin.com/company/evynta/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com/evynta" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Evynta. Empowering through AI, data, and design.</p>
+  </footer>
+
+  <script>
+    const phrases = [
+      "Empowering Through Intelligence",
+      "Driven by AI and Innovation",
+      "Shaping the Future with Data",
+      "Smart Solutions for Modern Brands"
+    ];
+    let i = 0;
+    setInterval(() => {
+      const title = document.getElementById("rotating-title");
+      title.style.opacity = 0;
+      setTimeout(() => {
+        title.textContent = phrases[i = (i + 1) % phrases.length];
+        title.style.opacity = 1;
+      }, 400);
+    }, 3000);
+  </script>
+</body>
+
+</html>
